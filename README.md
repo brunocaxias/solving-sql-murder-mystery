@@ -12,7 +12,7 @@ A crime has taken place and the detective needs your help. The detective gave yo
 Select * from 'crime_scene_report'
 where date='20180115' and type='murder' and city='SQL City'
 ```
-![Crime Scene Report](Images/Pasted image 250331100113.png)
+![Crime Scene Report](Images/Pasted image 20250331100113.png)
 
 ---
 
