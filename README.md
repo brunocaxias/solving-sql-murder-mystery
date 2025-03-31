@@ -23,7 +23,7 @@ where address_street_name='Northwestern Dr'
 order by address_number DESC
 limit 1
 ```
-![First Witness](Images/image250331100242.png)
+![First Witness](Images/image20250331100242.png)
 
 ---
 
@@ -32,7 +32,7 @@ limit 1
 select * from 'interview' 
 where person_id=14887
 ```
-![First Witness Statement](Images/image250331100403.png)
+![First Witness Statement](Images/image20250331100403.png)
 
 ---
 
@@ -41,7 +41,7 @@ where person_id=14887
 select * from 'get_fit_now_member'
 where membership_status='gold' and INSTR(id, '48Z')
 ```
-![Gym Members](Images/image250331100659.png)
+![Gym Members](Images/image20250331100659.png)
 
 ---
 
@@ -50,19 +50,19 @@ where membership_status='gold' and INSTR(id, '48Z')
 select * from 'get_fit_now_check_in'
 where INSTR(membership_id, '48Z')
 ```
-![Gym Check-ins](Images/image250331101414.png)
+![Gym Check-ins](Images/image20250331101414.png)
 
 ```sql
 select * from 'person'
 where name in ('Joe Germuska','Jeremy Bowers')
 ```
-![Suspects](Images/image250331102629.png)
+![Suspects](Images/image20250331102629.png)
 
 ```sql
 select * from 'facebook_event_checkin'
 where person_id in (28819, 67318)
 ```
-![Facebook Check-in](Images/image250331102744.png)  
+![Facebook Check-in](Images/image20250331102744.png)  
 *Jeremy Bowers has a check-in on the night of the crime.*
 
 ---
@@ -72,7 +72,7 @@ where person_id in (28819, 67318)
 select * from 'drivers_license'
 where instr(plate_number, 'H42W')
 ```
-![Car Registrations](Images/image250331103032.png)  
+![Car Registrations](Images/image20250331103032.png)  
 *The second record belongs to Jeremy Bowers.*
 
 ---
@@ -82,7 +82,7 @@ where instr(plate_number, 'H42W')
 select * from 'income'
 where ssn in (138909730, 871539279)
 ```
-![Income Records](Images/image250331103402.png)  
+![Income Records](Images/image20250331103402.png)  
 *No income record for Joe Germuska.*
 
 ---
@@ -92,7 +92,7 @@ where ssn in (138909730, 871539279)
 select * from 'interview'
 where person_id=67318
 ```
-![Jeremy's Statement](Images/image250331103821.png)  
+![Jeremy's Statement](Images/image20250331103821.png)  
 *He claims the car and bag were his but denies committing the crime.*
 
 ---
@@ -102,7 +102,7 @@ where person_id=67318
 select * from 'drivers_license'
 where (height between 65 and 67) and hair_color='red' and gender='female' and car_make='Tesla'
 ```
-![Female Suspect](Images/image250331105838.png)
+![Female Suspect](Images/image20250331105838.png)
 
 ---
 
@@ -112,13 +112,13 @@ select person_id, count(*) as visits from 'facebook_event_checkin'
 where event_name='SQL Symphony Concert' and instr(date, '201712') 
 group by person_id having visits > 2
 ```
-![Concert Visits](Images/image250331105047.png)
+![Concert Visits](Images/image20250331105047.png)
 
 ```sql
 select * from 'person'
 where id in (24556,99716)
 ```
-![Concert Attendees](Images/image250331105036.png)
+![Concert Attendees](Images/image20250331105036.png)
 
 ---
 
@@ -127,16 +127,16 @@ where id in (24556,99716)
 select * from 'income'
 where ssn=987756388
 ```
-![Miranda's Income](Images/image250331105335.png)  
+![Miranda's Income](Images/image20250331105335.png)  
 *She is wealthy* ✅
 
 ```sql
 select * from 'drivers_license'
 where id=202298
 ```
-![Miranda's License](Images/image250331110050.png)  
+![Miranda's License](Images/image20250331110050.png)  
 *She drives a Tesla Model S and matches the height* ✅  
-![Concert Visits](Images/image250331105047.png)  
+![Concert Visits](Images/image20250331105047.png)  
 *She attended the concert 3 times* ✅
 
 ---
@@ -146,13 +146,13 @@ where id=202298
 select * from 'person'
 where instr(name, 'Annabel') and address_street_name='Franklin Ave'
 ```
-![Annabel](Images/image250331111003.png)
+![Annabel](Images/image20250331111003.png)
 
 ```sql
 select * from 'interview'
 where person_id=16371
 ```
-![Annabel's Statement](Images/image250331111054.png)
+![Annabel's Statement](Images/image20250331111054.png)
 
 ---
 
@@ -161,13 +161,13 @@ where person_id=16371
 select * from 'get_fit_now_check_in'
 where check_in_date='20180109'
 ```
-![Gym Check-ins](Images/image250331111416.png)  
+![Gym Check-ins](Images/image20250331111416.png)  
 *Both Joe Germuska and Jeremy Bowers were present.*
 
 ---
 
 ### Final Conclusion: Miranda Priestly hired Jeremy Bowers to commit the murder.
-![Solution](Images/image250331112037.png)
+![Solution](Images/image20250331112037.png)
 
 
 </details>
