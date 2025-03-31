@@ -141,6 +141,5 @@ Evidencias apontam cada vez mais para Jeremy Bowers
 
 ### Solução final: Miranda Priestly contratou Jeremy Bowers para realizar o assassinato
 ![[Pasted image 20250331112037.png]]
-  
-  ```java
-  System.out.print("Hello World");
+
+</details>
